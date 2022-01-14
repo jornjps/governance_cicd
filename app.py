@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-quote = {
+quote = [
     "I'm going to make him an offer he can't refuse.",
     "Toto, I've got a feeling we're not in Kansas anymore.",
     "Go ahead, make my day.",
@@ -16,8 +16,8 @@ quote = {
     "I'll be back",
     "You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?",
     "Oh no!,   Anyway"
-}
-movie = {
+]
+movie = [
     "The Godfather, 1972",
     "The Wizard of Oz, 1939",
     "Sudden Impact, 1983",
@@ -31,12 +31,14 @@ movie = {
     "Jeremy Clarkson, Top Gear"
 
 
-}
+]
 
 
 @app.route('/', methods=['POST', 'GET'])
 def form():
-    if request.method == 'GET':
+    if request.method == "GET":
+        return render.remplate('input.html')
+    if request.method == 'POST':
         getal = (randrange(9))
         return render_template('template_file_name.html', quote=quote[getal], movie=movie[getal])
 
