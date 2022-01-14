@@ -37,7 +37,7 @@ movie = [
 @app.route('/', methods=['POST', 'GET'])
 def form():
     if request.method == "GET":
-        return render.remplate('input.html')
+        return render_template('input.html')
     if request.method == 'POST':
         getal = (randrange(9))
         return render_template('template_file_name.html', quote=quote[getal], movie=movie[getal])
