@@ -13,7 +13,8 @@ quote = {
     "You can't handle the truth!",
     "Round up the usual suspects.",
     "I'll be back",
-    "You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?"
+    "You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?",
+    "Oh no!,   Anyway"
 }
 movie = {
     "The Godfather, 1972",
@@ -25,7 +26,8 @@ movie = {
     "A Few Good Men, 1992",
     "Casablanca, 1942",
     "The Terminator, 1984",
-    "Dirty Harry, 1971"
+    "Dirty Harry, 1971",
+    "Jeremy Clarkson, Top Gear"
 
 
 }
