@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from random import randrange
+import os
 
 app = Flask(__name__)
 
@@ -42,4 +43,6 @@ def form():
         return render_template('template_file_name.html', quote=quote[getal], movie=movie[getal])
 
 
-app.run(host='localhost', port=5000)
+if __name__ == "__main__":
+
+    app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)))
