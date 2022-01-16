@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from random import randrange
 import os
-
+intrange = 10
 app = Flask(__name__)
 
 quote = [
@@ -29,8 +29,6 @@ movie = [
     "The Terminator, 1984",
     "Dirty Harry, 1971",
     "Jeremy Clarkson, Top Gear"
-
-
 ]
 
 
@@ -39,7 +37,7 @@ def form():
     if request.method == "GET":
         return render_template('input.html')
     if request.method == 'POST':
-        getal = (randrange(9))
+        getal = (randrange(intrange))
         return render_template('template_file_name.html', quote=quote[getal], movie=movie[getal])
 
 
